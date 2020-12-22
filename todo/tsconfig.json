@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noImplicitAny": true // 타입을 반드시 지정 any라도 붙여라 
+  },
+  "include": ["./src/**/*"]
+}
