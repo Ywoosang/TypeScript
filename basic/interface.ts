@@ -44,19 +44,7 @@ add = function(a: number,b: number){
 }
 
 /*
-인덱싱 방식을 정의하는 인터페이스
-기존에 속성하나 주고 타입을 정의했었던 
-interface User {
-    age : number;
-    name : string; 
-}
-위 방식과 달리 
 
-속성 이름이 정해져 있지 않고 임의로 그때그때마다 속성 이름을 부여해서 사용할 수 있는 
-방식이 인덱싱입니다. 
-[index : number] 로 
-
-인터페이스 딕셔너리 패턴 
 */
 interface StringArray {
     //arr[0] == index[number]  값은 string 
@@ -100,7 +88,6 @@ Object.keys(obj3).forEach(function(value) {
 interface Preson {
     name : string;
     age : number;
-
 }
 
 //Person 에 있는 두 개의 속성을 그대로 가져옵니다. 
@@ -110,8 +97,8 @@ interface Developer extends Preson{
     language : string; 
 }
 
-var woosang: Developer = {
-    name : "Ywoosang",
-    age : 21,
-    language: 'js,ts,go,python'
-}
+// var woosang: Developer = {
+//     name : "Ywoosang",
+//     age : 21,
+//     language: 'js,ts,go,python'
+// }

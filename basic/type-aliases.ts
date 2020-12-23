@@ -5,10 +5,10 @@
 */
 
 // string 타입을 사용할 때
-const name: string = 'Ywoosang';
+var name1: string = 'Ywoosang';
 // 타입 별칭을 사용할 때
 type typeName = string
-const name: typeName = 'Ywoosang'
+var name1: typeName = 'Ywoosang'
 
 
 //인터페이스와 같이 복잡한 구조로 타입 별칭을 사용해서 정의할 수 있다.

@@ -1,7 +1,7 @@
 // Ts 문자열 선언 
 // 변수 이름 : 타입 으로 선언합니다. 
 // 문자열 타입으로 간주하겠다라는 의미입니다. 
-let str : string = '123'; 
+var str : string = '123'; 
 
 // Ts 숫자 선언 
 let num : number = 123;
@@ -94,9 +94,4 @@ let todo : any ;
 function consoleLog(item: string): void{
     console.log(item);
 }; 
-
-
-
-
-
 
