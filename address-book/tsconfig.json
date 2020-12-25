@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "target": "es5",
+    "lib": ["es2015", "dom", "dom.iterable"],
+    //세가지 옵션 추가하면 오류 더 많이 뜸 
+    "noImplicitAny": true,
+    "strict": true,
+    "strictFunctionTypes": true
+  },
+  "include": ["./src/**/*"]
+}
