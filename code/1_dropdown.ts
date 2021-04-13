@@ -2,6 +2,36 @@ interface Email {
     value : string;
     selected: boolean;
   }
+// 타입 두 개가 모두 포함되기 때문에 유니온 사용
+ 
+  
+interface Project{  
+    name : string,
+    language : string,
+}
+interface Book {
+    name : string,
+    page : number, 
+}
+
+function start(): Project | Book {
+    return { name : 'Ts', language :'TypeScript', page: 33 };
+} 
+
+function isProject(target : Project | Book) : target is Project {
+  // language 속성이 있을 때 Project 타입으로 취급
+  return (target as Project).language !== undefined; 
+} 
+const tsProject = start();
+
+if(isProject(tsProject)) {
+  //
+  console.log(tsProject.language);  
+} else {
+  // Project 타입이 아닐 경우 유니온에 설정된 Book 타입이 자동으로 적용
+  console.log(tsProject.page);
+}
+
   
   
   const emails: Email[] = [
@@ -15,6 +45,8 @@ interface Email {
     selected:boolean; 
   }
   
+const a:number | string = 'a';
+
   const numberOfProducts: ProductNumber[] = [
     { value: 1, selected: true },
     { value: 2, selected: false },

@@ -33,19 +33,25 @@ getUser({age:22, name:'nextYearYwoosang'});
 
 // 함수의 스펙(구조)에 인터페이스를 활용 
 
-interface SumFunction {
-    // 받는 인자에 대해 정의 반환 타입까지 정의 
-    (a: number, b: number): number 
-};
+// interface AddFunction {
+//     (a :number, b: number ) : number;
+//   }
+  
+//   const  add: AddFunction = (a: number ,b:number ): number => {
+//     return a + b;
+//   }
+// /*
+ 
+ 
 
-var add: SumFunction;
-add = function(a: number,b: number){
-    return a+b; 
-}
 
-/*
+interface NumberArray{
+    [index : number] : number
+  }
+  // arr[:number]  [number ,number]
+  const numbers:NumberArray = [1,2,3,4];
 
-*/
+
 interface StringArray {
     //arr[0] == index[number]  값은 string 
     [index:number] :string;

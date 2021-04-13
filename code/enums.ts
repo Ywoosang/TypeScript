@@ -16,7 +16,6 @@ enum lang {
 var myLang = lang.Python;
 console.log(myLang); // 0  별도의 값을 지정하지 않으면 일단 숫자형 이넘으로 취급
 
-
 // 값을 지정한 문자형 이넘 
 enum hub {
     Git= '깃', 

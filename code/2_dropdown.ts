@@ -30,7 +30,16 @@ DropdownItem<number>
     option.selected = item.selected;
     return option;
   }
-  
+  class Developer {
+    name : string;
+    language : string;
+}
+interface Person {
+    name : string;
+    language : string;
+} 
+let person: Person;
+person = new Developer();
   // NOTE: 이메일 드롭 다운 아이템 추가
   /*
   emails 와 numberOfProducts 두 개를 모두 수용할 수 있는 타입을 정의해야한다. 
